@@ -1,0 +1,329 @@
+<!-- index.html – Hotel Booking Website (Home / Dashboard) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Stay – Hotel Booking</title>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles/first.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ===== Header / Navbar ===== -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo"><a href="#home">Royal Stay</a></h1>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#rooms">Rooms</a>
+        <a href="#food">Food</a>
+        <a href="#featured">Featured</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        type="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <h2 class="hero-heading">Feel the Luxury of Royal Stay</h2>
+      <p class="hero-subheading">Book premium rooms &amp; fine dining at unbeatable prices.</p>
+      <a href="#rooms" class="btn primary-btn">Book a Room</a>
+    </div>
+  </section>
+
+  <!-- ===== Rooms Section ===== -->
+  <section class="section rooms" id="rooms">
+    <div class="container">
+      <h2 class="section-title">Our Rooms</h2>
+
+      <div class="card-grid">
+        <!-- Room Card 1 -->
+        <article class="card room-card" data-room-id="1">
+          <img src="assets/standard.jpg" alt="Standard Room" />
+          <div class="card-body">
+            <h3>Standard Room</h3>
+            <p class="price">₹1 500 / night</p>
+            <button class="btn book-btn" type="button">Book Now</button>
+          </div>
+        </article>
+
+        <!-- Room Card 2 -->
+        <article class="card room-card" data-room-id="2">
+          <img src="assets/Luxury or Premium Room.webp" alt="Executive Suite" />
+          <div class="card-body">
+            <h3>Luxury or Premium Room</h3>
+            <p class="price">₹2 500 / night</p>
+            <button class="btn book-btn" type="button">Book Now</button>
+          </div>
+        </article>
+
+        <!-- Room Card 3 -->
+        <article class="card room-card" data-room-id="3">
+          <img src="assets/Family & Group Accommodation.jpg" alt="Family Room" />
+          <div class="card-body">
+            <h3>Family & Group Accommodation</h3>
+            <p class="price">₹2 000 / night</p>
+            <button class="btn book-btn" type="button">Book Now</button>
+          </div>
+        </article>
+      </div>
+
+      <a href="rooms.html" class="btn secondary-btn explore-btn">Explore More Rooms</a>
+    </div>
+  </section>
+
+  <!-- ===== Food Section ===== -->
+  <section class="section food" id="food">
+    <div class="container">
+      <h2 class="section-title">Our Food Menu</h2>
+
+      <div class="card-grid">
+        <!-- Food Card 1 -->
+        <article class="card food-card" data-food-id="101">
+          <img src="assets/Standard Meals.avif" alt="Paneer Tikka" />
+          <div class="card-body">
+            <h3>Standard Meals</h3>
+            <p class="price">₹299</p>
+            <button class="btn order-btn" type="button">Order Now</button>
+          </div>
+        </article>
+
+        <!-- Food Card 2 -->
+        <article class="card food-card" data-food-id="102">
+          <img src="assets/Premium & Continental Dishes.jpeg" alt="Veg Biryani" />
+          <div class="card-body">
+            <h3>Premium & Continental Dishes</h3>
+            <p class="price">₹349</p>
+            <button class="btn order-btn" type="button">Order Now</button>
+          </div>
+        </article>
+
+        <!-- Food Card 3 -->
+        <article class="card food-card" data-food-id="103">
+          <img src="assets/Family & Group Combos.png" alt="Cheese Pizza" />
+          <div class="card-body">
+            <h3>Family & Group Combos</h3>
+            <p class="price">₹399</p>
+            <button class="btn order-btn" type="button">Order Now</button>
+          </div>
+        </article>
+      </div>
+
+      <a href="food.html" class="btn secondary-btn explore-btn">See Full Menu</a>
+    </div>
+  </section>
+
+ <!-- ===== Spa & Wellness Section ===== -->
+<section class="section spa" id="spa">
+  <div class="container">
+    <h2 class="section-title">Spa & Wellness</h2>
+    <div class="spa-cards">
+
+      <div class="spa-card" data-room-id="relaxation">
+        <img src="assets/Relaxation Massage.webp" alt="Relaxation Massage">
+        <h3>Relaxation Massage</h3>
+        <p>Unwind with our signature full-body massage using aromatic oils.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="spa-card" data-room-id="steam-sauna">
+        <img src="assets/Steam & Sauna.jpg" alt="Steam & Sauna">
+        <h3>Steam & Sauna</h3>
+        <p>Detoxify your body and skin with our premium steam therapy sessions.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="spa-card" data-room-id="facial-therapy">
+        <img src="assets/Facial Therapy.webp" alt="Facial Therapy">
+        <h3>Facial Therapy</h3>
+        <p>Rejuvenate your skin with organic facial treatments and masks.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+    </div>
+
+    <div class="explore-more">
+      <a href="spa.html" class="explore-btn">Explore More</a>
+    </div>
+  </div>
+</section>
+ 
+
+  <!-- ===== Featured Section ===== -->
+<section class="section featured" id="featured">
+  <div class="container">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="features">
+
+      <div class="feature">
+        <span class="icon">🏊‍♂️</span>
+        <h3>Infinity Pool</h3>
+        <p>Relax in our rooftop pool with breathtaking views.</p>
+      </div>
+
+      <div class="feature">
+        <span class="icon">🍽️</span>
+        <h3>24×7 Gourmet Dining</h3>
+        <p>Order world-class dishes any time of day or night.</p>
+      </div>
+
+      <div class="feature">
+        <span class="icon">💆‍♀️</span>
+        <h3>Spa & Wellness</h3>
+        <p>Recharge with therapeutic spa and wellness treatments.</p>
+      </div>
+
+      <div class="feature">
+        <span class="icon">🛌</span>
+        <h3>Luxury Rooms</h3>
+        <p>Elegant rooms with modern amenities and cozy interiors.</p>
+      </div>
+
+      <div class="feature">
+        <span class="icon">🔐</span>
+        <h3>Secure & Safe</h3>
+        <p>24/7 surveillance and advanced security systems.</p>
+      </div>
+
+      <div class="feature">
+        <span class="icon">📶</span>
+        <h3>Free Wi-Fi</h3>
+        <p>Stay connected with high-speed internet access throughout the hotel.</p>
+      </div>
+
+      <div class="feature">
+        <span class="icon">📍</span>
+        <h3>Prime Location</h3>
+        <p>Located close to city attractions, transport, and shopping hubs.</p>
+      </div>
+
+      <div class="feature">
+        <span class="icon">😊</span>
+        <h3>Friendly Staff</h3>
+        <p>Our team is here to ensure your comfort and satisfaction 24/7.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ===== Enhanced About Section ===== -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <!-- Left Side: Image & Rating -->
+    <div class="about-img-container">
+      <img src="assets/about image.jpg" alt="Hotel Lobby" class="about-img" />
+      <div class="rating-badge">⭐ 4.8/5 Rating</div>
+    </div>
+
+    <!-- Right Side: Content -->
+    <div class="about-text">
+      <h2>Discover the Royal Stay Experience</h2>
+      <p>
+        Since 2025, we've hosted <strong>12,000+ happy guests</strong> from around the globe. Our luxury rooms, 24×7 service,
+        and hand‑crafted gourmet food make every stay memorable.
+      </p>
+      <p>
+        Located in the heart of the city, Royal Stay is a blend of timeless elegance and modern comfort.
+        Whether it’s business, a romantic getaway, or family travel — we've got you covered.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat-box">
+          <h3>50+</h3>
+          <p>Luxury Rooms</p>
+        </div>
+        <div class="stat-box">
+          <h3>24×7</h3>
+          <p>Room Service</p>
+        </div>
+        <div class="stat-box">
+          <h3>12k+</h3>
+          <p>Guests Served</p>
+        </div>
+      </div>
+
+      <a href="#rooms" class="btn primary-btn">Explore Rooms</a>
+    </div>
+  </div>
+</section>
+ 
+  <!-- ===== Testimonials Section ===== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Guests Say</h2>
+
+      <div class="testimonial-grid">
+        <!-- Testimonial Card 1 -->
+        <div class="testimonial-card">
+          <p>"An unforgettable experience! The staff was incredibly friendly and the food was top-notch."</p>
+          <h4>– Priya Sharma</h4>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="testimonial-card">
+          <p>"The luxury room exceeded my expectations. Perfect for a romantic getaway!"</p>
+          <h4>– Raj Mehta</h4>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="testimonial-card">
+          <p>"Best hotel in the city! Clean, safe, and the amenities are fantastic."</p>
+          <h4>– Anjali Verma</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Royal Stay Hotels. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Font Awesome (icons) -->
+  <script src="https://kit.fontawesome.com/6b3c4f7f6a.js" crossorigin="anonymous"></script>
+
+  <!-- Page‑specific JS -->
+  <script src="first.js" defer></script>
+</body>
+</html>
