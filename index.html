@@ -16,37 +16,36 @@
 
   <body>
     <!-- Sticky Logo Outside Navbar -->
-<div class="floating-logo">
-  <a href="#home">Royal Stay</a>
-</div>
+    <div class="floating-logo">
+      <a href="#home">Royal Stay</a>
+    </div>
 
-<!-- Navbar starts here -->
-<header class="navbar">
-  <div class="container nav-content">
-    <nav class="nav-links" id="navLinks">
-      <a href="#rooms">Rooms</a>
-      <a href="#food">Food</a>
-      <a href="#spa">Spa</a>
-      <a href="#featured">Featured</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <!-- Navbar starts here -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <nav class="nav-links" id="navLinks">
+          <a href="#rooms">Rooms</a>
+          <a href="#food">Food</a>
+          <a href="#spa">Spa</a>
+          <a href="#featured">Featured</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-    <!-- Hamburger -->
-    <button
-      class="hamburger"
-      id="hamburger"
-      aria-label="Toggle navigation"
-      aria-expanded="false"
-      type="button"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</header>
-
+        <!-- Hamburger -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
 
     <!-- ===== Hero Section ===== -->
     <section class="hero" id="home">
@@ -63,6 +62,26 @@
     <section class="section rooms" id="rooms">
       <div class="container">
         <h2 class="section-title">Our Rooms</h2>
+        <p class="section-description">
+          Experience the perfect blend of elegance and comfort in our
+          thoughtfully designed rooms. From plush king-sized beds to modern
+          amenities like 43" LED TVs, high-speed internet, and marble-finished
+          bathrooms — every detail is curated to offer you a luxurious stay
+          worth remembering.Choose from our range of rooms designed to suit
+          every need and budget. Whether you're traveling solo, with family, or
+          on a business trip, we have the perfect accommodation for you.
+        </p>
+        <p class="section-description">
+          At ROYAL STAY, we offer the perfect venue for every occasion — from
+          high-profile corporate gatherings to elegant weddings, birthday
+          celebrations to cultural events. Our spacious banquet halls and lush
+          party lawns can accommodate over a thousand guests, making us an ideal
+          choice for grand events. With top-notch facilities, personalized
+          service, and a dedicated event team, we ensure your celebration is not
+          just successful, but truly unforgettable.
+        </p>
+        <hr class="section-divider" />
+        <!-- Room Cards -->
         <div class="card-grid">
           <!-- Room Card 1 -->
           <article class="card room-card" data-room-id="1">
@@ -100,7 +119,6 @@
             </div>
           </article>
         </div>
-
         <a href="rooms.html" class="btn secondary-btn explore-btn"
           >Explore More Rooms</a
         >
@@ -111,6 +129,25 @@
     <section class="section food" id="food">
       <div class="container">
         <h2 class="section-title">Our Food Menu</h2>
+        <p class="section-description">
+          Savor a delightful culinary journey at our in-house restaurant where
+          taste meets tradition. From sizzling Indian delicacies to
+          international favorites, every dish is crafted using fresh ingredients
+          and authentic recipes. Whether you're enjoying a romantic dinner or a
+          casual meal, our warm hospitality and diverse menu promise a memorable
+          experience. Indulge in our 24/7 gourmet dining service, where
+          world-class cuisine is just a call away—anytime, day or night.
+        </p>
+        <p class="section-description">
+          Experience a symphony of flavors at ROYAL STAY’s signature dining
+          venues. Whether you're enjoying a gourmet meal in our elegant
+          restaurant, savoring the open-air charm of our rooftop seating, or
+          indulging in the comfort of in-room dining, our carefully curated menu
+          is crafted to delight every palate.
+        </p>
+
+        <hr class="section-divider" />
+        <!-- Food Cards -->
         <div class="card-grid">
           <!-- Food Card 1 -->
           <article class="card food-card" data-food-id="101">
@@ -145,7 +182,6 @@
             </div>
           </article>
         </div>
-
         <a href="food.html" class="btn secondary-btn explore-btn"
           >See Full Menu</a
         >
@@ -156,6 +192,17 @@
     <section class="section spa" id="spa">
       <div class="container">
         <h2 class="section-title">Spa & Wellness</h2>
+        <p class="section-description">
+          Escape to tranquility in our luxurious Spa & Wellness center, where
+          relaxation meets rejuvenation. Choose from a range of therapies
+          including deep-tissue massages, aromatherapy, and revitalizing facials
+          — all delivered by skilled therapists using premium natural products.
+          Whether you're seeking stress relief or simply want to unwind, our spa
+          offers the perfect retreat. Reconnect with your senses and indulge in
+          a wellness experience designed to soothe, refresh, and restore.
+        </p>
+        <hr class="section-divider" />
+        <!-- Spa Cards -->
         <div class="card-grid">
           <!-- Spa Card 1 -->
           <article class="card room-card" data-room-id="1">
@@ -214,7 +261,9 @@
 
         <!-- Explore More Treatments Button -->
         <div class="explore-more" style="text-align: left; margin-top: 2rem">
-          <a href="spa.html" class="btn secondary-btn explore-btn">Explore More Treatments</a>
+          <a href="spa.html" class="btn secondary-btn explore-btn"
+            >Explore More Treatments</a
+          >
         </div>
       </div>
     </section>
@@ -258,124 +307,194 @@
             <span class="icon">📶</span>
             <h3>Free Wi-Fi</h3>
             <p>
-              Stay connected with high-speed internet access throughout the hotel.
+              Stay connected with high-speed internet access throughout the
+              hotel.
             </p>
           </div>
 
           <div class="feature">
             <span class="icon">📍</span>
             <h3>Prime Location</h3>
-            <p>Located close to city attractions, transport, and shopping hubs.</p>
+            <p>
+              Located close to city attractions, transport, and shopping hubs.
+            </p>
           </div>
 
           <div class="feature">
             <span class="icon">😊</span>
             <h3>Friendly Staff</h3>
-            <p>Our team is here to ensure your comfort and satisfaction 24/7.</p>
+            <p>
+              Our team is here to ensure your comfort and satisfaction 24/7.
+            </p>
+          </div>
+
+          <div class="feature">
+            <span class="icon">🎉</span>
+            <h3>Event Spaces</h3>
+            <p>
+              Perfect venues for weddings, parties, and corporate events with
+              personalized service.
+            </p>
+          </div>
+
+          <div class="feature">
+            <span class="icon">🏋️‍♂️</span>
+            <h3>Gym & Fitness</h3>
+            <p>
+              Stay active with our modern fitness center equipped for all
+              workout styles.
+            </p>
+          </div>
+
+          <div class="feature">
+            <span class="icon">💼</span>
+            <h3>Business & Conference</h3>
+            <p>
+              Professional spaces for meetings, seminars, and corporate events.
+            </p>
+          </div>
+
+          <div class="feature">
+            <span class="icon">🖨️</span>
+            <h3>Printing & Fax</h3>
+            <p>
+              Convenient access to printing, copying, and fax services 24/7.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===== About Section ===== -->
-<section class="section about" id="about">
-  <h2 class="section-title">About Us</h2>
-  <div class="container about-grid">
-    <!-- Left Side: Images & Rating -->
-<div class="about-img-container image-grid fade-in">
-  <div class="img-box">
-    <img src="assets/About 1.jpg" alt="Hotel Exterior" class="about-img" />
-  </div>
-  <div class="img-box">
-    <img src="assets/About 2.jpeg" alt="Hotel Room" class="about-img" />
-  </div>
-  <div class="rating-badge">⭐ 4.8/5 Rating</div>
-</div>
-
-
-    <!-- Right Side: Content -->
-    <div class="about-text">
-      <h2>Discover the Royal Stay Experience</h2>
-      <p>
-        Since <strong>2025</strong>, we’ve welcomed over <strong>12,000+</strong> happy guests from around the world.
-        From hand-crafted gourmet cuisine to round-the-clock service, every detail of your stay is tailored to perfection.
-      </p>
-      <p>
-        Located in the heart of the city, <strong>Royal Stay</strong> offers a timeless blend of elegance, comfort, and modern luxury.
-        Whether you're visiting for business, leisure, or a romantic escape — you’ll find the perfect environment here.
-      </p>
-
-      <blockquote style="font-style: italic; color: #555; margin: 1rem 0; border-left: 4px solid var(--accent); padding-left: 1rem;">
-        “A stay at Royal Stay feels less like a hotel and more like home – with a royal touch.” 
-      </blockquote>
-
-      <div class="about-stats">
-        <div class="stat-box">
-          <h3>50+</h3>
-          <p>Luxury Rooms</p>
+    <section class="section about" id="about">
+      <h2 class="section-title">About Us</h2>
+      <div class="container about-grid">
+        <!-- Left Side: Images & Rating -->
+        <div class="about-img-container image-grid fade-in">
+          <div class="img-box">
+            <img
+              src="assets/About 1.jpg"
+              alt="Hotel Exterior"
+              class="about-img"
+            />
+          </div>
+          <div class="img-box">
+            <img src="assets/About 2.jpeg" alt="Hotel Room" class="about-img" />
+          </div>
+          <div class="rating-badge">⭐ 4.8/5 Rating</div>
         </div>
-        <div class="stat-box">
-          <h3>24×7</h3>
-          <p>Room Service</p>
-        </div>
-        <div class="stat-box">
-          <h3>12k+</h3>
-          <p>Guests Served</p>
-        </div>
-        <div class="stat-box">
-          <h3>10+</h3>
-          <p>Years of Excellence</p>
+
+        <!-- Right Side: Content -->
+        <div class="about-text">
+          <h2>Discover the Royal Stay Experience</h2>
+          <p>
+            Since <strong>2025</strong>, we’ve welcomed over
+            <strong>12,000+</strong> happy guests from around the world. From
+            hand-crafted gourmet cuisine to round-the-clock service, every
+            detail of your stay is tailored to perfection.
+          </p>
+          <p>
+            Located in the heart of the city, <strong>Royal Stay</strong> offers
+            a timeless blend of elegance, comfort, and modern luxury. Whether
+            you're visiting for business, leisure, or a romantic escape — you’ll
+            find the perfect environment here.
+          </p>
+
+          <blockquote
+            style="
+              font-style: italic;
+              color: #555;
+              margin: 1rem 0;
+              border-left: 4px solid var(--accent);
+              padding-left: 1rem;
+            "
+          >
+            “A stay at Royal Stay feels less like a hotel and more like home –
+            with a royal touch.”
+          </blockquote>
+
+          <div class="about-stats">
+            <div class="stat-box">
+              <h3>50+</h3>
+              <p>Luxury Rooms</p>
+            </div>
+            <div class="stat-box">
+              <h3>24×7</h3>
+              <p>Room Service</p>
+            </div>
+            <div class="stat-box">
+              <h3>12k+</h3>
+              <p>Guests Served</p>
+            </div>
+            <div class="stat-box">
+              <h3>10+</h3>
+              <p>Years of Excellence</p>
+            </div>
+          </div>
+
+          <ul style="margin-top: 1rem; color: #444; line-height: 1.6">
+            <li>✔ Personalized guest experiences</li>
+            <li>✔ Trusted by international travelers</li>
+            <li>✔ Rated one of the top stays in the region</li>
+          </ul>
+
+          <a href="#rooms" class="btn primary-btn" style="margin-top: 1.5rem"
+            >Explore Rooms</a
+          >
         </div>
       </div>
-
-      <ul style="margin-top: 1rem; color: #444; line-height: 1.6;">
-        <li>✔ Personalized guest experiences</li>
-        <li>✔ Trusted by international travelers</li>
-        <li>✔ Rated one of the top stays in the region</li>
-      </ul>
-
-      <a href="#rooms" class="btn primary-btn" style="margin-top: 1.5rem;">Explore Rooms</a>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- ===== Testimonials Section ===== -->
-<section class="section testimonials" id="testimonials">
-  <div class="container">
-    <h2 class="section-title">What Our Guests Say</h2>
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Guests Say</h2>
 
-    <div class="testimonial-grid">
-      <!-- Testimonial Card 1 -->
-      <div class="testimonial-card animated">
-        <img src="assets/testimonial1.jpg" alt="Priya Sharma" class="testimonial-img" />
-        <p>
-          "An unforgettable experience! The staff was incredibly friendly and the food was top-notch."
-        </p>
-        <h4>– Priya Sharma</h4>
+        <div class="testimonial-grid">
+          <!-- Testimonial Card 1 -->
+          <div class="testimonial-card animated">
+            <img
+              src="assets/testimonial1.jpg"
+              alt="Priya Sharma"
+              class="testimonial-img"
+            />
+            <p>
+              "An unforgettable experience! The staff was incredibly friendly
+              and the food was top-notch."
+            </p>
+            <h4>-Vanshika</h4>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="testimonial-card animated">
+            <img
+              src="assets/testimonial2.avif"
+              alt="Raj Mehta"
+              class="testimonial-img"
+            />
+            <p>
+              "The luxury room exceeded my expectations. Perfect for a romantic
+              getaway!"
+            </p>
+            <h4>– Priya Sharma</h4>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div class="testimonial-card animated">
+            <img
+              src="assets/testimonial3.avif"
+              alt="Anjali Verma"
+              class="testimonial-img"
+            />
+            <p>
+              "Best hotel in the city! Clean, safe, and the amenities are
+              fantastic."
+            </p>
+            <h4>– Anjali Verma</h4>
+          </div>
+        </div>
       </div>
-
-      <!-- Testimonial Card 2 -->
-      <div class="testimonial-card animated">
-        <img src="assets/testimonial2.avif" alt="Raj Mehta" class="testimonial-img" />
-        <p>
-          "The luxury room exceeded my expectations. Perfect for a romantic getaway!"
-        </p>
-        <h4>– Vanshika</h4>
-      </div>
-
-      <!-- Testimonial Card 3 -->
-      <div class="testimonial-card animated">
-        <img src="assets/testimonial3.avif" alt="Anjali Verma" class="testimonial-img" />
-        <p>
-          "Best hotel in the city! Clean, safe, and the amenities are fantastic."
-        </p>
-        <h4>– Anjali Verma</h4>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- ===== Contact Section ===== -->
     <section class="section contact" id="contact">
