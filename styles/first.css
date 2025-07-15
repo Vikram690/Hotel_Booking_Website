@@ -4,7 +4,7 @@
 :root {
   --accent: #4ecdc4;
   --primary: #0a3d62;
-  --light: #faf5f5bb;
+  --light: #f4f2ee;
 }
 
 /* Reset */
@@ -63,7 +63,7 @@ body {
 }
 
 /* Logo */
-.logo a {
+.floating-logo{
   font-size: 2rem;
   font-weight: 800;
   text-decoration: none;
@@ -73,29 +73,17 @@ body {
   -webkit-text-fill-color: transparent;
   transition: color 0.3s, transform 0.3s;
 }
-.logo a:hover {
-  transform: scale(1.05);
+.floating-logo:hover {
+  transform: scale(1.5);
   color: #fffacd; /* Light gold on hover */
 }
 .floating-logo {
   position: fixed;
   top: 15px;
   left: 20px;
-  z-index: 1001;
+  z-index: 1000;
 }
-
-.floating-logo a {
-  font-size: 2rem;
-  font-weight: 800;
-  text-decoration: none;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: transform 0.3s ease;
-}
-
-.floating-logo a:hover {
+.floating-logo:hover {
   transform: scale(1.1);
 }
 /* Optional bounce animation when page loads */
@@ -254,13 +242,33 @@ body {
 }
 .section-title {
   font-size: 2rem;
-  text-align: center;
+  text-align: center ;
   margin-bottom: 2rem;
   color: var(--primary);
 }
 .container {
   max-width: 1200px;
   margin: auto;
+}
+.section-description {
+  font-size: 1rem;
+  color: #444;
+  max-width: 1100px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: center;
+  justify-content: justify;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-divider {
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  margin: 2rem auto 3rem;
+  border: none;
+  border-radius: 5px;
 }
 
 /* Cards */
@@ -300,9 +308,7 @@ body {
 }
 
 /* Spa Section */
-.spa {
-  background-color: #f9f9f9;
-}
+
 .spa-cards {
   display: flex;
   flex-wrap: wrap;

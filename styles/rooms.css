@@ -1,0 +1,184 @@
+ /* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  --accent: #4ecdc4;
+  --primary: #0a3d62;
+  --light: #f4f2ee;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--light);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-rooms {
+  width: 500px;
+  position: fixed;
+  top: 20px;
+  left: 83%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: linear-gradient(90deg, #ebf2f2dc, #cdd8d886);
+  border: 3px solid #8aa8c2;
+  border-radius: 50px;
+  padding: 0.7rem 5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center; /*//hdsdsbjdbs */
+  align-items: center;
+  gap: 2rem;
+}
+.navbar-rooms .nav-links {
+  display: flex;
+  gap: 2rem;  
+}
+.navbar-rooms.scrolled {
+  background: #ffffff4d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Sections */
+.section-room-title {
+  padding: 60px 10px;
+}
+.section-room-title{
+  font-size: 2.5rem;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+  color: var(--primary);
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+/* .ssection-room-grid-title{
+  padding: 60px 10px;
+} */
+.section-room-grid-title{
+  font-size: 2rem;
+  text-align: left;
+  /* margin-bottom: 2rem; */
+  color: var(--primary);
+}
+/* .section-room-title-description {
+  font-size: 1rem;
+  color: #444;
+  max-width: 1100px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: center;
+  justify-content: justify;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-room-title-divider {
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  margin: 2rem auto 3rem;
+  border: none;
+  border-radius: 5px;
+} */
+/* Category heading */
+.room-category {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin: 1.5rem 0 1rem;
+  text-align: left;
+}
+
+/* Container for one category’s 4 cards */
+.category-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 980px) {
+  /* 2‑column fallback on tablets */
+  .category-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  /* Single‑column on phones */
+  .category-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card tweaks – re‑use existing card styles */
+.room-card {
+  position: relative;                /* for rating badge */
+  transition: transform .3s, box-shadow .3s;
+  border-radius: 14px;               /* slightly softer */
+}
+.room-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.12);
+}
+
+/* Rating badge (top‑left) */
+.room-card .rating {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--primary);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: .75rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+/* Meta row under price */
+.room-card .meta {
+  font-size: .85rem;
+  color: #666;
+  margin-bottom: .5rem;
+}
+
+/* Book‑button spacing */
+.room-card .book-btn {
+  margin-top: .25rem;
+}
+
+/* Filter bar override (inherits .btn) */
+.room-filter {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.room-filter .filter-btn.active {
+  background: var(--primary);
+  color: #fff;
+}
