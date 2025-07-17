@@ -25,9 +25,9 @@
       <div class="container nav-content">
         <nav class="nav-links" id="navLinks">
           <a href="index.html#home">◀Home</a>
-          <a href="index.html#food">Standard</a>
-          <a href="index.html#featured">Premium</a>
-          <a href="index.html#about">Family</a>
+          <a href="#delux-rooms">Standard</a>
+          <a href="#luxury-rooms">Premium</a>
+          <a href="#family-rooms">Family</a>
         </nav>
 
         <button
@@ -36,7 +36,8 @@
           aria-label="Toggle navigation"
           aria-expanded="false"
           type="button"
-          onclick="toggleHamburger()">
+          onclick="toggleHamburger()"
+        >
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -45,222 +46,242 @@
     <h2 class="section-room-title">Choose Your Stay</h2>
 
     <!-- ===== Room Cards Grid ===== -->
+
+    <!-- === Deluxe Rooms === -->
     <section class="section">
       <div class="container">
-        <h2 class="section-room-grid-title">1️⃣ Standard Room</h2>
+        <h2 class="section-room-grid-title" id="delux-rooms">
+          1️⃣ Standard Room
+        </h2>
+        <br />
         <div class="card-grid" id="roomGrid">
-          <!-- === Deluxe Rooms === -->
           <article class="card room-card" data-type="deluxe" data-room-id="d1">
-  <img src="assets/standard 1.jpg" alt="Deluxe City View" />
-  <div class="card-body">
-    <h3>Deluxe City View</h3>
-    <p class="price">₹1 800 / night</p>
-    <p class="meta">👥 2 · 35 ㎡ · City View</p>
-    <p class="meta">🍳 Free Breakfast · 📶 Wi-Fi · ☕ Welcome Drink</p>
-    <div class="rating">⭐ 4.7</div>
-    <button class="btn book-btn">Book Now</button>
-  </div>
-</article>
+            <img src="assets/rooms/standard 1.jpg" alt="Deluxe City View" />
+            <div class="card-body">
+              <h3>Deluxe City View</h3>
+              <p class="price">₹1 800 / night</p>
+              <p class="meta">👥 2 · 35 ㎡ · City View</p>
+              <p class="meta">
+                🍳 Free Breakfast · 📶 Wi-Fi · ☕ Welcome Drink
+              </p>
+              <div class="rating">⭐ 4.7</div>
+              <button class="btn book-btn">Book Now</button>
+            </div>
+          </article>
 
-<article class="card room-card" data-type="deluxe" data-room-id="d2">
-  <img src="assets/standard 2.webp" alt="Deluxe Pool View" />
-  <div class="card-body">
-    <h3>Deluxe Pool View</h3>
-    <p class="price">₹1 900 / night</p>
-    <p class="meta">👥 2 · 37 ㎡ · Pool View + Balcony</p>
-    <p class="meta">📺 Smart TV · 📶 Wi-Fi · 🪟 Balcony Access</p>
-    <div class="rating">⭐ 4.8</div>
-    <button class="btn book-btn">Book Now</button>
-  </div>
-</article>
+          <article class="card room-card" data-type="deluxe" data-room-id="d4">
+            <img src="assets/rooms/standard 4.jpg" alt="Deluxe Garden" />
+            <div class="card-body">
+              <h3>Deluxe Garden</h3>
+              <p class="price">₹1 700 / night</p>
+              <p class="meta">👥 2 · 32 ㎡ · Garden Access</p>
+              <p class="meta">🌿 Green View · 📶 Wi-Fi · 🧺 Laundry Service</p>
+              <div class="rating">⭐ 4.5</div>
+              <button class="btn book-btn">Book Now</button>
+            </div>
+          </article>
 
-<article class="card room-card" data-type="deluxe" data-room-id="d3">
-  <img src="assets/standard 3.jpg" alt="Deluxe Corner" />
-  <div class="card-body">
-    <h3>Deluxe Corner</h3>
-    <p class="price">₹1 850 / night</p>
-    <p class="meta">👥 2 · 33 ㎡ · City View (Corner)</p>
-    <p class="meta">🛋️ Extra Windows · 📶 Wi-Fi · ☕ Mini Bar</p>
-    <div class="rating">⭐ 4.6</div>
-    <button class="btn book-btn">Book Now</button>
-  </div>
-</article>
+          <article class="card room-card" data-type="deluxe" data-room-id="d3">
+            <img src="assets/index/standard room.jpg" alt="Deluxe Corner" />
+            <div class="card-body">
+              <h3>Deluxe Corner</h3>
+              <p class="price">₹1 850 / night</p>
+              <p class="meta">👥 2 · 33 ㎡ · City View (Corner)</p>
+              <p class="meta">🛋️ Extra Windows · 📶 Wi-Fi · ☕ Mini Bar</p>
+              <div class="rating">⭐ 4.6</div>
+              <button class="btn book-btn">Book Now</button>
+            </div>
+          </article>
 
-<article class="card room-card" data-type="deluxe" data-room-id="d4">
-  <img src="assets/standard 4.jpg" alt="Deluxe Garden" />
-  <div class="card-body">
-    <h3>Deluxe Garden</h3>
-    <p class="price">₹1 700 / night</p>
-    <p class="meta">👥 2 · 32 ㎡ · Garden Access</p>
-    <p class="meta">🌿 Green View · 📶 Wi-Fi · 🧺 Laundry Service</p>
-    <div class="rating">⭐ 4.5</div>
-    <button class="btn book-btn">Book Now</button>
-  </div>
-</article>
+          <article class="card room-card" data-type="deluxe" data-room-id="d2">
+            <img src="assets/rooms/standard 2.webp" alt="Deluxe Pool View" />
+            <div class="card-body">
+              <h3>Deluxe Pool View</h3>
+              <p class="price">₹1 900 / night</p>
+              <p class="meta">👥 2 · 37 ㎡ · Pool View + Balcony</p>
+              <p class="meta">📺 Smart TV · 📶 Wi-Fi · 🪟 Balcony Access</p>
+              <div class="rating">⭐ 4.8</div>
+              <button class="btn book-btn">Book Now</button>
+            </div>
+          </article>
 
-<article class="card room-card" data-type="deluxe" data-room-id="d5">
-  <img src="assets/standard 5.jpeg" alt="Deluxe Corner Premium" />
-  <div class="card-body">
-    <h3>Deluxe Corner Premium</h3>
-    <p class="price">₹2 000 / night</p>
-    <p class="meta">👥 2 · 36 ㎡ · City + Pool View</p>
-    <p class="meta">🍳 Free Breakfast · 📺 Smart TV · 🛋️ Sofa</p>
-    <div class="rating">⭐ 4.9</div>
-    <button class="btn book-btn">Book Now</button>
-  </div>
-</article>
+          <article class="card room-card" data-type="deluxe" data-room-id="d6">
+            <img
+              src="assets/rooms/standard 6.jpeg"
+              alt="Deluxe Balcony Garden"
+            />
+            <div class="card-body">
+              <h3>Deluxe Balcony Garden</h3>
+              <p class="price">₹1 950 / night</p>
+              <p class="meta">👥 2 · 34 ㎡ · Garden + Balcony</p>
+              <p class="meta">🪟 Private Balcony · 📶 Wi-Fi · ☕ Tea/Coffee</p>
+              <div class="rating">⭐ 4.7</div>
+              <button class="btn book-btn">Book Now</button>
+            </div>
+          </article>
 
-<article class="card room-card" data-type="deluxe" data-room-id="d6">
-  <img src="assets/standard 6.jpeg" alt="Deluxe Balcony Garden" />
-  <div class="card-body">
-    <h3>Deluxe Balcony Garden</h3>
-    <p class="price">₹1 950 / night</p>
-    <p class="meta">👥 2 · 34 ㎡ · Garden + Balcony</p>
-    <p class="meta">🪟 Private Balcony · 📶 Wi-Fi · ☕ Tea/Coffee</p>
-    <div class="rating">⭐ 4.7</div>
-    <button class="btn book-btn">Book Now</button>
-  </div>
-</article>
+          <article class="card room-card" data-type="deluxe" data-room-id="d5">
+            <img
+              src="assets/rooms/standard 5.jpeg"
+              alt="Deluxe Corner Premium"
+            />
+            <div class="card-body">
+              <h3>Deluxe Corner</h3>
+              <p class="price">₹2 000 / night</p>
+              <p class="meta">👥 2 · 36 ㎡ · City + Pool View</p>
+              <p class="meta">🍳 Free Breakfast · 📺 Smart TV · 🛋️ Sofa</p>
+              <div class="rating">⭐ 4.9</div>
+              <button class="btn book-btn">Book Now</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <!-- === Suite Rooms === -->
-        <h2 class="section-room-grid-title">2️⃣ Luxury or Premium Room</h2>
+    <!-- === Suite Rooms === -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-room-grid-title" id="luxury-rooms">
+          2️⃣ Luxury or Premium Room
+        </h2>
+        <br />
+        <div class="card-grid" id="roomGrid">
           <article class="card room-card" data-type="suite" data-room-id="s1">
-            <img src="assets/rooms/exec-suite.jpg" alt="Executive Suite" />
+            <img src="assets/rooms/premium 1.jpg" alt="Executive Suite" />
             <div class="card-body">
               <h3>Executive Suite</h3>
-              <p class="price">₹3 200 / night</p>
-              <p class="meta">👥 3 · 55 ㎡ · Living Area</p>
-              <div class="rating">⭐ 4.9</div>
+              <p class="price">₹4 500 / night</p>
+              <p class="meta">👥 3 · 55 ㎡ · City View · Lounge Access</p>
+              <div class="rating">⭐ 4.8</div>
+              <p class="perks">
+                🎁 Free: Breakfast · Mini-bar · High-speed Wi‑Fi
+              </p>
               <button class="btn book-btn">Book Now</button>
             </div>
           </article>
 
           <article class="card room-card" data-type="suite" data-room-id="s2">
-            <img src="assets/rooms/junior-suite.jpg" alt="Junior Suite" />
+            <img
+              src="assets/index/Luxury or Premium Room.webp"
+              alt="Junior Suite"
+            />
             <div class="card-body">
               <h3>Junior Suite</h3>
-              <p class="price">₹2 800 / night</p>
-              <p class="meta">👥 3 · 48 ㎡ · Balcony</p>
+              <p class="price">₹3 900 / night</p>
+              <p class="meta">👥 3 · 48 ㎡ · Balcony · Smart TV</p>
               <div class="rating">⭐ 4.7</div>
+              <p class="perks">
+                🎁 Free: Welcome Drink · Wi‑Fi · Breakfast Buffet
+              </p>
               <button class="btn book-btn">Book Now</button>
             </div>
           </article>
 
           <article class="card room-card" data-type="suite" data-room-id="s3">
-            <img src="assets/rooms/skyline-suite.jpg" alt="Skyline Suite" />
+            <img src="assets/rooms/premium 3.jpg" alt="Skyline Suite" />
             <div class="card-body">
               <h3>Skyline Suite</h3>
-              <p class="price">₹3 500 / night</p>
-              <p class="meta">👥 3 · 60 ㎡ · Panoramic View</p>
-              <div class="rating">⭐ 4.8</div>
+              <p class="price">₹5 200 / night</p>
+              <p class="meta">👥 3 · 60 ㎡ · Skyline View · Spa Access</p>
+              <div class="rating">⭐ 4.9</div>
+              <p class="perks">
+                🎁 Free: Spa Voucher · Premium Wi‑Fi · Refreshments
+              </p>
               <button class="btn book-btn">Book Now</button>
             </div>
           </article>
 
-          <article class="card room-card" data-type="suite" data-room-id="s4">
-            <img src="assets/rooms/presidential.jpg" alt="Presidential Suite" />
+          <article class="card room-card" data-type="suite" data-room-id="s5">
+            <img
+              src="assets/rooms/premium 4.jpeg"
+              alt="Executive Suite - High Floor"
+            />
+            <div class="card-body">
+              <h3>Executive Suite (High Floor)</h3>
+              <p class="price">₹4 700 / night</p>
+              <p class="meta">👥 3 · 55 ㎡ · Top Floor · Quiet Zone</p>
+              <div class="rating">⭐ 4.9</div>
+              <p class="perks">🎁 Free: Mini-bar · Early Check-in · Netflix</p>
+              <button class="btn book-btn">Book Now</button>
+            </div>
+          </article>
+
+          <article class="card room-card" data-type="suite" data-room-id="s6">
+            <img src="assets/rooms/premium 5.jpg" alt="Presidential Suite" />
             <div class="card-body">
               <h3>Presidential Suite</h3>
-              <p class="price">₹7 000 / night</p>
-              <p class="meta">👥 4 · 110 ㎡ · Private Butler</p>
+              <p class="price">₹10 500 / night</p>
+              <p class="meta">👥 5 · 120 ㎡ · Private Elevator · Chauffeur</p>
               <div class="rating">⭐ 5.0</div>
+              <p class="perks">
+                🎁 Free: Champagne · Butler Service · Gourmet Meals
+              </p>
               <button class="btn book-btn">Book Now</button>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="card room-card" data-type="suite" data-room-id="s3">
-            <img src="assets/rooms/skyline-suite.jpg" alt="Skyline Suite" />
-            <div class="card-body">
-              <h3>Skyline Suite</h3>
-              <p class="price">₹3 500 / night</p>
-              <p class="meta">👥 3 · 60 ㎡ · Panoramic View</p>
-              <div class="rating">⭐ 4.8</div>
-              <button class="btn book-btn">Book Now</button>
-            </div>
-          </article>
-
-          <article class="card room-card" data-type="suite" data-room-id="s4">
-            <img src="assets/rooms/presidential.jpg" alt="Presidential Suite" />
-            <div class="card-body">
-              <h3>Presidential Suite</h3>
-              <p class="price">₹7 000 / night</p>
-              <p class="meta">👥 4 · 110 ㎡ · Private Butler</p>
-              <div class="rating">⭐ 5.0</div>
-              <button class="btn book-btn">Book Now</button>
-            </div>
-          </article>
-
-          <!-- === Family Rooms === -->
-        <h2 class="section-room-grid-title">3️⃣ Family & Group Accommodation</h2>
+    <!-- === Family Rooms === -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-room-grid-title" id="family-rooms">
+          3️⃣ Family & Group Accommodation
+        </h2>
+        <br />
+        <div class="card-grid" id="roomGrid">
           <article class="card room-card" data-type="family" data-room-id="f1">
-            <img src="assets/rooms/family-standard.jpg" alt="Family Standard" />
+            <img src="assets/rooms/family 1.jpeg" alt="Family Deluxe Room" />
             <div class="card-body">
-              <h3>Family Standard</h3>
-              <p class="price">₹2 400 / night</p>
-              <p class="meta">👥 4 · 45 ㎡ · Bunk Bed</p>
-              <div class="rating">⭐ 4.5</div>
+              <h3>Family Deluxe Room</h3>
+              <p class="price">₹3 200 / night</p>
+              <p class="meta">👥 4 · 50 ㎡ · Double Bed · Kids' Area</p>
+              <div class="rating">⭐ 4.6</div>
+              <p class="perks">🎁 Free: Breakfast · Wi‑Fi · Board Games</p>
               <button class="btn book-btn">Book Now</button>
             </div>
           </article>
 
           <article class="card room-card" data-type="family" data-room-id="f2">
-            <img src="assets/rooms/family-deluxe.jpg" alt="Family Deluxe" />
+            <img src="assets/rooms/family 2.jpg" alt="Family Suite" />
             <div class="card-body">
-              <h3>Family Deluxe</h3>
-              <p class="price">₹2 700 / night</p>
-              <p class="meta">👥 4 · 50 ㎡ · Balcony</p>
-              <div class="rating">⭐ 4.6</div>
+              <h3>Family Suite</h3>
+              <p class="price">₹3 800 / night</p>
+              <p class="meta">👥 5 · 60 ㎡ · Two Bedrooms · Balcony</p>
+              <div class="rating">⭐ 4.8</div>
+              <p class="perks">
+                🎁 Free: Buffet Breakfast · Wi‑Fi · Late Checkout
+              </p>
               <button class="btn book-btn">Book Now</button>
             </div>
           </article>
 
           <article class="card room-card" data-type="family" data-room-id="f3">
-            <img src="assets/rooms/family-pool.jpg" alt="Family Pool Access" />
+            <img src="assets/rooms/family 3.jpg" alt="Group Suite" />
             <div class="card-body">
-              <h3>Family Pool Access</h3>
-              <p class="price">₹2 900 / night</p>
-              <p class="meta">👥 4 · 53 ㎡ · Pool Access</p>
+              <h3>Group Suite</h3>
+              <p class="price">₹4 200 / night</p>
+              <p class="meta">👥 6 · 70 ㎡ · 3 Beds · Dining Area</p>
               <div class="rating">⭐ 4.7</div>
+              <p class="perks">
+                🎁 Free: Welcome Drinks · Wi‑Fi · Laundry Service
+              </p>
               <button class="btn book-btn">Book Now</button>
             </div>
           </article>
 
           <article class="card room-card" data-type="family" data-room-id="f4">
-            <img
-              src="assets/rooms/family-connecting.jpg"
-              alt="Connecting Family Room"
-            />
+            <img src="assets/rooms/family 4.webp" alt="Quad Family Room" />
             <div class="card-body">
-              <h3>Family Connecting</h3>
-              <p class="price">₹3 000 / night</p>
-              <p class="meta">👥 6 · 65 ㎡ · 2 Bedrooms</p>
-              <div class="rating">⭐ 4.8</div>
+              <h3>Quad Family Room</h3>
+              <p class="price">₹3 600 / night</p>
+              <p class="meta">👥 4 · 55 ㎡ · 2 Queen Beds · Garden View</p>
+              <div class="rating">⭐ 4.5</div>
+              <p class="perks">🎁 Free: Snacks · Kids Channel · Parking</p>
               <button class="btn book-btn">Book Now</button>
             </div>
           </article>
-
-          <article class="card room-card" data-type="family" data-room-id="f2">
-            <img src="assets/rooms/family-deluxe.jpg" alt="Family Deluxe" />
-            <div class="card-body">
-              <h3>Family Deluxe</h3>
-              <p class="price">₹2 700 / night</p>
-              <p class="meta">👥 4 · 50 ㎡ · Balcony</p>
-              <div class="rating">⭐ 4.6</div>
-              <button class="btn book-btn">Book Now</button>
-            </div>
-          </article>
-
-          <article class="card room-card" data-type="family" data-room-id="f3">
-            <img src="assets/rooms/family-pool.jpg" alt="Family Pool Access" />
-            <div class="card-body">
-              <h3>Family Pool Access</h3>
-              <p class="price">₹2 900 / night</p>
-              <p class="meta">👥 4 · 53 ㎡ · Pool Access</p>
-              <div class="rating">⭐ 4.7</div>
-              <button class="btn book-btn">Book Now</button>
-            </div>
-          </article>
-          
         </div>
       </div>
     </section>

@@ -74,15 +74,19 @@ body {
   max-width: 1200px;
   margin: auto;
 }
-/* .ssection-room-grid-title{
-  padding: 60px 10px;
-} */
+
 .section-room-grid-title{
   font-size: 2rem;
   text-align: left;
-  /* margin-bottom: 2rem; */
   color: var(--primary);
 }
+.card-body .perks {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
 /* .section-room-title-description {
   font-size: 1rem;
   color: #444;

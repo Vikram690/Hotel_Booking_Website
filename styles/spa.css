@@ -1,0 +1,203 @@
+/* spa.css */
+
+/* Page background */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f7f2;
+  color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for all services */
+.spa-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Main heading */
+.spa-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+  position: relative;
+}
+
+.spa-container h2 {
+  font-size: 1.5rem;
+  margin: 40px 0 20px;
+  color: #444;
+  border-left: 5px solid #ff6b6b;
+  padding-left: 12px;
+}
+/* Sections */
+.spa-banner-1{
+  padding: 100px 0px;
+}
+.spa-banner-1{
+  font-size: 1.5rem;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+  color: var(--primary);
+}
+/* Individual service entry */
+.spa-service {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
+}
+
+.spa-service:hover {
+  transform: translateY(-4px);
+}
+
+/* Service name */
+.spa-service h3 {
+  font-size: 1.2rem;
+  margin: 0 0 6px;
+  color: #222;
+}
+
+/* Description */
+.spa-service p.description {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Price Row */
+.price-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Book Now button */
+.book-btn {
+  padding: 8px 16px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #e65151;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .price-row {
+    flex-direction: column;
+  }
+
+  .spa-container {
+    padding: 0 10px;
+  }
+}
+/* === SPA SECTION === */
+
+.spa-section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fdfcfa;
+}
+
+.spa-section h2 {
+  font-size: 2rem;
+  color: #1e1e1e;
+  border-left: 6px solid #ff7b54;
+  padding-left: 12px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.spa-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spa-list li {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spa-list li:hover {
+  transform: translateY(-4px);
+}
+
+/* Name */
+.spa-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+/* Description */
+.spa-desc {
+  font-size: 0.95rem;
+  color: #666;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Rates */
+.spa-rates {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Button */
+.spa-btn {
+  padding: 8px 16px;
+  background-color: #ff7b54;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: auto;
+}
+
+.spa-btn:hover {
+  background-color: #ff5722;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .spa-btn {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .spa-rates {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
